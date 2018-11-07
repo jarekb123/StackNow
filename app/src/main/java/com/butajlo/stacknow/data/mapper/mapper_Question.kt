@@ -10,7 +10,7 @@ fun QuestionData.toEntity() =
         questionId = questionId,
         title = title,
         questionUrl = link,
-        creationDate = creationDate.toCalendar(),
-        lastActivityDate = lastActivityDate.toCalendar(),
+        creationDate = (creationDate * 1000L).toCalendar(),
+        lastActivityDate = (lastActivityDate * 1000L).toCalendar(),
         isAnswered = isAnswered
     )
