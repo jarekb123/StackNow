@@ -1,0 +1,784 @@
+{
+    "items": [
+    {
+        "tags": [
+        "ios",
+        "assets",
+        "apple-watch",
+        "watch-os",
+        "watch-os-5"
+        ],
+        "owner": {
+        "reputation": 246,
+        "user_id": 5317395,
+        "user_type": "registered",
+        "accept_rate": 40,
+        "profile_image": "https://graph.facebook.com/100001986185325/picture?type=large",
+        "display_name": "guhan0",
+        "link": "https://stackoverflow.com/users/5317395/guhan0"
+    },
+        "is_answered": false,
+        "view_count": 9,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541571251,
+        "creation_date": 1541571251,
+        "question_id": 53184397,
+        "link": "https://stackoverflow.com/questions/53184397/apple-watch-appicon-for-long-look-notification-is-missing-in-assets-xcassets",
+        "title": "Apple Watch AppIcon for Long-Look notification is missing in Assets.xcassets"
+    },
+    {
+        "tags": [
+        "ios",
+        "google-calendar-api"
+        ],
+        "owner": {
+        "reputation": 1,
+        "user_id": 10612703,
+        "user_type": "registered",
+        "profile_image": "https://graph.facebook.com/10155857381007393/picture?type=large",
+        "display_name": "Lebaile",
+        "link": "https://stackoverflow.com/users/10612703/lebaile"
+    },
+        "is_answered": false,
+        "view_count": 16,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1541520201,
+        "creation_date": 1541503209,
+        "last_edit_date": 1541520201,
+        "question_id": 53170860,
+        "link": "https://stackoverflow.com/questions/53170860/no-borders-in-apple-but-in-android",
+        "title": "no borders in apple but in android"
+    },
+    {
+        "tags": [
+        "ios",
+        "swift",
+        "ios10",
+        "xcode8",
+        "fastlane-match"
+        ],
+        "owner": {
+        "reputation": 1785,
+        "user_id": 1311272,
+        "user_type": "registered",
+        "accept_rate": 41,
+        "profile_image": "https://www.gravatar.com/avatar/ac5b9faef78e585b08b241771148c77c?s=128&d=identicon&r=PG",
+        "display_name": "Sajjon",
+        "link": "https://stackoverflow.com/users/1311272/sajjon"
+    },
+        "is_answered": true,
+        "view_count": 31420,
+        "accepted_answer_id": 39489057,
+        "answer_count": 6,
+        "score": 42,
+        "last_activity_date": 1541517126,
+        "creation_date": 1473512195,
+        "question_id": 39426287,
+        "link": "https://stackoverflow.com/questions/39426287/xcode-8-cannot-run-on-device-provisioning-profile-problems-mentioning-apple-wat",
+        "title": "Xcode 8 cannot run on device, provisioning profile problems mentioning Apple Watch"
+    },
+    {
+        "tags": [
+        "ios",
+        "ios-simulator",
+        "watchkit",
+        "apple-watch"
+        ],
+        "owner": {
+        "reputation": 307,
+        "user_id": 921889,
+        "user_type": "registered",
+        "accept_rate": 75,
+        "profile_image": "https://www.gravatar.com/avatar/9ad19167a6862de465eb57227bd3b0ea?s=128&d=identicon&r=PG",
+        "display_name": "Alexandre Dieulot",
+        "link": "https://stackoverflow.com/users/921889/alexandre-dieulot"
+    },
+        "is_answered": false,
+        "view_count": 13,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1541503173,
+        "creation_date": 1541501504,
+        "question_id": 53170412,
+        "link": "https://stackoverflow.com/questions/53170412/open-a-web-page-in-the-apple-watch-simulator",
+        "title": "Open a web page in the Apple Watch simulator"
+    },
+    {
+        "tags": [
+        "ios"
+        ],
+        "owner": {
+        "reputation": 1227,
+        "user_id": 639895,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/2XjSV.png?s=128&g=1",
+        "display_name": "appsunited",
+        "link": "https://stackoverflow.com/users/639895/appsunited"
+    },
+        "is_answered": true,
+        "view_count": 2521,
+        "answer_count": 2,
+        "score": -1,
+        "last_activity_date": 1541501137,
+        "creation_date": 1461317787,
+        "last_edit_date": 1541501137,
+        "question_id": 36790194,
+        "link": "https://stackoverflow.com/questions/36790194/how-to-add-a-team-member-to-apple-developer-program",
+        "title": "How to add a team member to Apple Developer Program"
+    },
+    {
+        "tags": [
+        "ios",
+        "objective-c",
+        "iphone",
+        "apple-music"
+        ],
+        "owner": {
+        "reputation": 932,
+        "user_id": 3677087,
+        "user_type": "registered",
+        "accept_rate": 57,
+        "profile_image": "https://www.gravatar.com/avatar/9f1fc6fc3effa0d0528b629341a79b84?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Benr783",
+        "link": "https://stackoverflow.com/users/3677087/benr783"
+    },
+        "is_answered": true,
+        "view_count": 438,
+        "answer_count": 3,
+        "score": 1,
+        "last_activity_date": 1541457187,
+        "creation_date": 1497925095,
+        "question_id": 44642769,
+        "link": "https://stackoverflow.com/questions/44642769/playing-song-with-apple-music-api-does-not-update-control-center-or-lock-screen",
+        "title": "Playing song with Apple Music API does not update control center or lock screen"
+    },
+    {
+        "tags": [
+        "ios",
+        "in-app-purchase",
+        "recurring-billing",
+        "in-app"
+        ],
+        "owner": {
+        "reputation": 150,
+        "user_id": 3410110,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/f2ce460d5a3b5a6c16e5c054955f1a2d?s=128&d=identicon&r=PG",
+        "display_name": "cermakjn",
+        "link": "https://stackoverflow.com/users/3410110/cermakjn"
+    },
+        "is_answered": false,
+        "view_count": 14,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541433040,
+        "creation_date": 1541433040,
+        "question_id": 53157713,
+        "link": "https://stackoverflow.com/questions/53157713/apple-in-app-purchases-what-happens-with-active-subscriptions-after-remove-ite",
+        "title": "Apple In-App Purchases - what happens with active subscriptions after remove item from sale"
+    },
+    {
+        "tags": [
+        "ios"
+        ],
+        "owner": {
+        "reputation": 1,
+        "user_id": 10608330,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/3f2ce80a05be55785ef308c22afd6f2e?s=128&d=identicon&r=PG&f=1",
+        "display_name": "hui",
+        "link": "https://stackoverflow.com/users/10608330/hui"
+    },
+        "is_answered": false,
+        "view_count": 13,
+        "closed_date": 1541429683,
+        "answer_count": 0,
+        "score": -2,
+        "last_activity_date": 1541428295,
+        "creation_date": 1541428295,
+        "question_id": 53156408,
+        "link": "https://stackoverflow.com/questions/53156408/i-wanna-to-apply-apple-enterprice-accout-but-it-is-being-processed-for-a-year",
+        "closed_reason": "unclear what you&#39;re asking",
+        "title": "I wanna to apply apple enterprice accout ,but it is being processed for a year. why it is so hard to get it ,any one know?"
+    },
+    {
+        "tags": [
+        "ios",
+        "watchkit",
+        "apple-watch"
+        ],
+        "owner": {
+        "reputation": 747,
+        "user_id": 241163,
+        "user_type": "registered",
+        "accept_rate": 47,
+        "profile_image": "https://www.gravatar.com/avatar/21483efd59dcae6835bd48cc9ecbbb34?s=128&d=identicon&r=PG",
+        "display_name": "gohnjanotis",
+        "link": "https://stackoverflow.com/users/241163/gohnjanotis"
+    },
+        "is_answered": false,
+        "view_count": 22,
+        "answer_count": 0,
+        "score": 1,
+        "last_activity_date": 1541420689,
+        "creation_date": 1541420689,
+        "question_id": 53154389,
+        "link": "https://stackoverflow.com/questions/53154389/determine-apple-watch-battery-level-from-paired-iphone",
+        "title": "Determine Apple Watch battery level from paired iPhone"
+    },
+    {
+        "tags": [
+        "ios",
+        "swift",
+        "mpmusicplayercontroller",
+        "apple-music"
+        ],
+        "owner": {
+        "reputation": 231,
+        "user_id": 3520046,
+        "user_type": "registered",
+        "accept_rate": 53,
+        "profile_image": "https://i.stack.imgur.com/KaQF7.jpg?s=128&g=1",
+        "display_name": "andres.cianio",
+        "link": "https://stackoverflow.com/users/3520046/andres-cianio"
+    },
+        "is_answered": false,
+        "view_count": 75,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541418060,
+        "creation_date": 1541418060,
+        "question_id": 53153694,
+        "link": "https://stackoverflow.com/questions/53153694/is-there-any-way-to-get-notifications-on-apple-music-playback-in-the-background",
+        "title": "Is there any way to get notifications on Apple Music playback in the background?"
+    },
+    {
+        "tags": [
+        "ios",
+        "node.js",
+        "express",
+        "stripe-payments",
+        "payment"
+        ],
+        "owner": {
+        "reputation": 1017,
+        "user_id": 6222152,
+        "user_type": "registered",
+        "accept_rate": 89,
+        "profile_image": "https://i.stack.imgur.com/d5Yrv.jpg?s=128&g=1",
+        "display_name": "AndrewLeonardi",
+        "link": "https://stackoverflow.com/users/6222152/andrewleonardi"
+    },
+        "is_answered": false,
+        "view_count": 96,
+        "bounty_amount": 50,
+        "bounty_closes_date": 1541856633,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541416760,
+        "creation_date": 1541040210,
+        "last_edit_date": 1541416760,
+        "question_id": 53094547,
+        "link": "https://stackoverflow.com/questions/53094547/apple-pay-payment-not-completed-using-stripe",
+        "title": "Apple Pay - &quot;Payment Not Completed&quot; - Using Stripe"
+    },
+    {
+        "tags": [
+        "javascript",
+        "ios"
+        ],
+        "owner": {
+        "reputation": 6,
+        "user_id": 8181591,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a19ddf9420062946ce70fb4802c4cc6e?s=128&d=identicon&r=PG&f=1",
+        "display_name": "faace",
+        "link": "https://stackoverflow.com/users/8181591/faace"
+    },
+        "is_answered": false,
+        "view_count": 26,
+        "answer_count": 0,
+        "score": 1,
+        "last_activity_date": 1541386433,
+        "creation_date": 1497856780,
+        "last_edit_date": 1541386433,
+        "question_id": 44624446,
+        "link": "https://stackoverflow.com/questions/44624446/how-to-detect-apple-app-is-installed-or-not-in-web-by-javascript-only-detect-n",
+        "title": "How to detect apple app is installed or not in web by javascript (only detect, not open the app)"
+    },
+    {
+        "tags": [
+        "ios",
+        "xcode",
+        "pdf",
+        "ios-pdfkit",
+        "apple-pdfkit"
+        ],
+        "owner": {
+        "reputation": 66,
+        "user_id": 1592487,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/b03b4e6448467e0b8bf196384a362acb?s=128&d=identicon&r=PG",
+        "display_name": "hirenhcm",
+        "link": "https://stackoverflow.com/users/1592487/hirenhcm"
+    },
+        "is_answered": false,
+        "view_count": 14,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1541366699,
+        "creation_date": 1540873220,
+        "question_id": 53057373,
+        "link": "https://stackoverflow.com/questions/53057373/apple-pdfkit-issue-with-pdfs-with-validation-scripts",
+        "title": "Apple PDFKit - issue with PDFs with validation scripts."
+    },
+    {
+        "tags": [
+        "ios",
+        "hardware",
+        "mfi",
+        "homekit",
+        "apple-developer"
+        ],
+        "owner": {
+        "reputation": 8867,
+        "user_id": 4396618,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-2fcmdufdUUY/AAAAAAAAAAI/AAAAAAAAAEI/fLBNkDaYHp8/photo.jpg?sz=128",
+        "display_name": "William Cerniuk",
+        "link": "https://stackoverflow.com/users/4396618/william-cerniuk"
+    },
+        "is_answered": false,
+        "view_count": 10,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541285203,
+        "creation_date": 1541285203,
+        "question_id": 53136180,
+        "link": "https://stackoverflow.com/questions/53136180/does-apple-respond-in-the-mfi-portal-message-center-to-you",
+        "title": "Does Apple respond in the MFi Portal Message Center to You?"
+    },
+    {
+        "tags": [
+        "ios",
+        "xcode",
+        "apple-watch"
+        ],
+        "owner": {
+        "reputation": 1,
+        "user_id": 10596896,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-jnf07KwV0F8/AAAAAAAAAAI/AAAAAAAAADY/24YAetJN2aE/photo.jpg?sz=128",
+        "display_name": "Дима Мищенко",
+        "link": "https://stackoverflow.com/users/10596896/%d0%94%d0%b8%d0%bc%d0%b0-%d0%9c%d0%b8%d1%89%d0%b5%d0%bd%d0%ba%d0%be"
+    },
+        "is_answered": false,
+        "view_count": 19,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1541276712,
+        "creation_date": 1541170606,
+        "last_edit_date": 1541276712,
+        "question_id": 53120931,
+        "link": "https://stackoverflow.com/questions/53120931/apple-watch-icon-not-displaying-in-the-watch-app-on-iphone",
+        "title": "Apple Watch icon not displaying in the &quot;Watch&quot; app on iPhone"
+    },
+    {
+        "tags": [
+        "ios",
+        "code-signing",
+        "provisioning-profile",
+        "ipa",
+        "code-signing-certificate"
+        ],
+        "owner": {
+        "reputation": 769,
+        "user_id": 414516,
+        "user_type": "registered",
+        "accept_rate": 49,
+        "profile_image": "https://i.stack.imgur.com/YRzed.jpg?s=128&g=1",
+        "display_name": "rahulg",
+        "link": "https://stackoverflow.com/users/414516/rahulg"
+    },
+        "is_answered": true,
+        "view_count": 9451,
+        "answer_count": 2,
+        "score": 2,
+        "last_activity_date": 1541271862,
+        "creation_date": 1409723128,
+        "last_edit_date": 1541271788,
+        "question_id": 25637037,
+        "link": "https://stackoverflow.com/questions/25637037/how-to-install-an-unsigned-ipa-file-on-my-device-using-an-apple-developer-accoun",
+        "title": "How to install an unsigned IPA file on my device using an Apple Developer account?"
+    },
+    {
+        "tags": [
+        "ios",
+        "iphone",
+        "avfoundation",
+        "ios-camera"
+        ],
+        "owner": {
+        "reputation": 490,
+        "user_id": 5953619,
+        "user_type": "registered",
+        "accept_rate": 45,
+        "profile_image": "https://www.gravatar.com/avatar/8c277b6a367dfa614b3d42efdb3edca1?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Michael",
+        "link": "https://stackoverflow.com/users/5953619/michael"
+    },
+        "is_answered": true,
+        "view_count": 2585,
+        "answer_count": 3,
+        "score": 1,
+        "last_activity_date": 1541234146,
+        "creation_date": 1468037305,
+        "last_edit_date": 1530800569,
+        "question_id": 38278216,
+        "link": "https://stackoverflow.com/questions/38278216/has-apple-officially-not-allowed-access-to-camera-for-app-in-background",
+        "title": "Has Apple officially not allowed access to camera for app in background?"
+    },
+    {
+        "tags": [
+        "ios",
+        "swift",
+        "avaudioplayer",
+        "siri",
+        "sirishortcuts"
+        ],
+        "owner": {
+        "reputation": 11,
+        "user_id": 4105328,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-VXIoOcHHPTI/AAAAAAAAAAI/AAAAAAAAAMw/aE1x1fn1FX8/photo.jpg?sz=128",
+        "display_name": "Calogero Cascio",
+        "link": "https://stackoverflow.com/users/4105328/calogero-cascio"
+    },
+        "is_answered": false,
+        "view_count": 17,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1541168890,
+        "creation_date": 1541166231,
+        "question_id": 53119720,
+        "link": "https://stackoverflow.com/questions/53119720/apple-siri-intent-stops-playback-without-apparent-reason",
+        "title": "Apple Siri Intent stops playback without apparent reason"
+    },
+    {
+        "tags": [
+        "ios",
+        "in-app"
+        ],
+        "owner": {
+        "reputation": 13,
+        "user_id": 5090289,
+        "user_type": "registered",
+        "accept_rate": 50,
+        "profile_image": "https://www.gravatar.com/avatar/fdb9c9d6329cd4d26f3c1cb56053a48d?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Gurpreet Singh",
+        "link": "https://stackoverflow.com/users/5090289/gurpreet-singh"
+    },
+        "is_answered": false,
+        "view_count": 17,
+        "answer_count": 0,
+        "score": -1,
+        "last_activity_date": 1541163732,
+        "creation_date": 1541144675,
+        "last_edit_date": 1541163732,
+        "question_id": 53114527,
+        "link": "https://stackoverflow.com/questions/53114527/how-do-i-cancel-unsubscribe-apple-in-app-from-an-auto-renewing-subscription-on-a",
+        "title": "How do I cancel/unsubscribe apple in-app from an auto-renewing subscription on Android devices?"
+    },
+    {
+        "tags": [
+        "ios",
+        "favicon",
+        "apple-touch-icon"
+        ],
+        "owner": {
+        "reputation": 66,
+        "user_id": 587102,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/f8ae5c1d9d94ffc023a528a76cad65ec?s=128&d=identicon&r=PG",
+        "display_name": "Jason",
+        "link": "https://stackoverflow.com/users/587102/jason"
+    },
+        "is_answered": false,
+        "view_count": 24,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1541138782,
+        "creation_date": 1541138782,
+        "question_id": 53113424,
+        "link": "https://stackoverflow.com/questions/53113424/apple-touch-icon-ios-issue",
+        "title": "Apple Touch Icon - IOS issue?"
+    },
+    {
+        "tags": [
+        "ios",
+        "app-store"
+        ],
+        "owner": {
+        "reputation": 8,
+        "user_id": 10015512,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9730db359c09635ed4dc09cff85cddf5?s=128&d=identicon&r=PG&f=1",
+        "display_name": "user10015512",
+        "link": "https://stackoverflow.com/users/10015512/user10015512"
+    },
+        "is_answered": false,
+        "view_count": 22,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1541112474,
+        "creation_date": 1538754588,
+        "question_id": 52669298,
+        "link": "https://stackoverflow.com/questions/52669298/how-to-update-metadata-easily-apple-app-store",
+        "title": "How to update metadata easily Apple App Store?"
+    },
+    {
+        "tags": [
+        "ios",
+        "account",
+        "apple-developer"
+        ],
+        "owner": {
+        "reputation": 18,
+        "user_id": 8615075,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/6c5034ebc1242ae9b82eda35124024f1?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tatev",
+        "link": "https://stackoverflow.com/users/8615075/tatev"
+    },
+        "is_answered": false,
+        "view_count": 37,
+        "closed_date": 1541073320,
+        "answer_count": 0,
+        "score": -4,
+        "last_activity_date": 1541072023,
+        "creation_date": 1541072023,
+        "question_id": 53100454,
+        "link": "https://stackoverflow.com/questions/53100454/how-get-apple-developer-account",
+        "closed_reason": "off-topic",
+        "title": "How get Apple developer account"
+    },
+    {
+        "tags": [
+        "ios",
+        "xcode",
+        "ios10"
+        ],
+        "owner": {
+        "reputation": 2512,
+        "user_id": 867848,
+        "user_type": "registered",
+        "accept_rate": 60,
+        "profile_image": "https://www.gravatar.com/avatar/104b07761a3c99c26712a1d0b2747ec9?s=128&d=identicon&r=PG",
+        "display_name": "Fabrizio Bartolomucci",
+        "link": "https://stackoverflow.com/users/867848/fabrizio-bartolomucci"
+    },
+        "is_answered": false,
+        "view_count": 861,
+        "answer_count": 2,
+        "score": 0,
+        "last_activity_date": 1541049141,
+        "creation_date": 1473400336,
+        "last_edit_date": 1541049141,
+        "question_id": 39404687,
+        "link": "https://stackoverflow.com/questions/39404687/apple-xcode-8-seed-submission-issue-invalid-toolchain",
+        "title": "Apple Xcode 8 seed submission issue: Invalid Toolchain"
+    },
+    {
+        "tags": [
+        "ios",
+        "tomcat",
+        "deep-linking",
+        "ios-universal-links",
+        "apple-app-site-associate"
+        ],
+        "owner": {
+        "reputation": 37,
+        "user_id": 5096591,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://i.stack.imgur.com/6HTFi.jpg?s=128&g=1",
+        "display_name": "Abhijeet",
+        "link": "https://stackoverflow.com/users/5096591/abhijeet"
+    },
+        "is_answered": false,
+        "view_count": 12,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1540971932,
+        "creation_date": 1540971932,
+        "question_id": 53078539,
+        "link": "https://stackoverflow.com/questions/53078539/how-do-i-set-mime-type-for-apple-app-site-association-served-using-apache-tomcat",
+        "title": "How do I set MIME type for APPLE APP SITE ASSOCIATION served using apache tomcat server?"
+    },
+    {
+        "tags": [
+        "ios",
+        "macos",
+        "logging"
+        ],
+        "owner": {
+        "reputation": 580,
+        "user_id": 4231147,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/6cd434cb972b2dad79320101b7a42692?s=128&d=identicon&r=PG&f=1",
+        "display_name": "gutte",
+        "link": "https://stackoverflow.com/users/4231147/gutte"
+    },
+        "is_answered": true,
+        "view_count": 62,
+        "accepted_answer_id": 52376227,
+        "answer_count": 1,
+        "score": 3,
+        "last_activity_date": 1540889378,
+        "creation_date": 1537184564,
+        "last_edit_date": 1537187678,
+        "question_id": 52366951,
+        "link": "https://stackoverflow.com/questions/52366951/apple-unified-logging-how-to-get-file-name-and-line-number",
+        "title": "Apple unified logging - how to get file name and line number"
+    },
+    {
+        "tags": [
+        "android",
+        "ios",
+        "hardware",
+        "ibeacon",
+        "android-ibeacon"
+        ],
+        "owner": {
+        "reputation": 60,
+        "user_id": 2588216,
+        "user_type": "registered",
+        "accept_rate": 50,
+        "profile_image": "https://graph.facebook.com/1036106298/picture?type=large",
+        "display_name": "Adarsh ML",
+        "link": "https://stackoverflow.com/users/2588216/adarsh-ml"
+    },
+        "is_answered": true,
+        "view_count": 27,
+        "accepted_answer_id": 53016300,
+        "answer_count": 1,
+        "score": 0,
+        "last_activity_date": 1540883553,
+        "creation_date": 1540536147,
+        "last_edit_date": 1540883553,
+        "question_id": 53002898,
+        "link": "https://stackoverflow.com/questions/53002898/does-apple-require-you-to-have-some-special-chip-for-ibeaons",
+        "title": "Does apple require you to have some special chip for iBeaons?"
+    },
+    {
+        "tags": [
+        "ios",
+        "testing",
+        "itunesconnect",
+        "testflight",
+        "appstoreconnect"
+        ],
+        "owner": {
+        "reputation": 3977,
+        "user_id": 167451,
+        "user_type": "registered",
+        "accept_rate": 75,
+        "profile_image": "https://www.gravatar.com/avatar/17fe6b67b38fd51f50ba30f9f717dbb6?s=128&d=identicon&r=PG",
+        "display_name": "Neal",
+        "link": "https://stackoverflow.com/users/167451/neal"
+    },
+        "is_answered": false,
+        "view_count": 75,
+        "answer_count": 0,
+        "score": 1,
+        "last_activity_date": 1540844831,
+        "creation_date": 1534253139,
+        "question_id": 51842615,
+        "link": "https://stackoverflow.com/questions/51842615/prevent-apple-testflight-from-automatic-testing-at-completion-of-build-processin",
+        "title": "Prevent Apple TestFlight from automatic testing at completion of build processing"
+    },
+    {
+        "tags": [
+        "ios",
+        "maps",
+        "core-location",
+        "indoor-positioning-system"
+        ],
+        "owner": {
+        "reputation": 2173,
+        "user_id": 1938719,
+        "user_type": "registered",
+        "accept_rate": 80,
+        "profile_image": "https://i.stack.imgur.com/jBW6f.png?s=128&g=1",
+        "display_name": "Fengson",
+        "link": "https://stackoverflow.com/users/1938719/fengson"
+    },
+        "is_answered": true,
+        "view_count": 829,
+        "answer_count": 2,
+        "score": 3,
+        "last_activity_date": 1540836943,
+        "creation_date": 1443515714,
+        "question_id": 32839403,
+        "link": "https://stackoverflow.com/questions/32839403/how-is-apple-able-to-provide-indoor-location-using-corelocation",
+        "title": "How is Apple able to provide indoor location using CoreLocation?"
+    },
+    {
+        "tags": [
+        "ios",
+        "iphone",
+        "udid"
+        ],
+        "owner": {
+        "reputation": 2026,
+        "user_id": 4610512,
+        "user_type": "registered",
+        "accept_rate": 56,
+        "profile_image": "https://i.stack.imgur.com/o1X2W.jpg?s=128&g=1",
+        "display_name": "Shoeb Siddique",
+        "link": "https://stackoverflow.com/users/4610512/shoeb-siddique"
+    },
+        "is_answered": true,
+        "view_count": 1206,
+        "answer_count": 4,
+        "score": 2,
+        "last_activity_date": 1540801680,
+        "creation_date": 1537782530,
+        "question_id": 52476637,
+        "link": "https://stackoverflow.com/questions/52476637/unable-to-get-udid-from-iphone-xs-max-ios-apple-iphone",
+        "title": "Unable to get UDID from iPhone Xs Max | iOS | Apple | iPhone"
+    },
+    {
+        "tags": [
+        "ios",
+        "swift",
+        "certificate",
+        "itunesconnect",
+        "account"
+        ],
+        "owner": {
+        "reputation": 58,
+        "user_id": 1888222,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/ad54431f023705bbea9bd7d78d5da24f?s=128&d=identicon&r=PG",
+        "display_name": "M0TRIX",
+        "link": "https://stackoverflow.com/users/1888222/m0trix"
+    },
+        "is_answered": false,
+        "view_count": 96,
+        "answer_count": 0,
+        "score": 0,
+        "last_activity_date": 1540727283,
+        "creation_date": 1540630567,
+        "last_edit_date": 1540727283,
+        "question_id": 53020264,
+        "link": "https://stackoverflow.com/questions/53020264/the-updated-apple-developer-program-license-agreement-needs-to-be-reviewed-and-n",
+        "title": "The updated Apple Developer Program License Agreement needs to be reviewed and no access to certificate panel"
+    }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 264
+}
