@@ -7,7 +7,7 @@ data class UserData(
     @SerializedName("user_id") val userId: Int?,
     @SerializedName("user_type") val userType: Type,
     @SerializedName("profile_image") val profileImageUrl: String?,
-    @SerializedName("display_name") val displayName: String?,
+    @SerializedName("display_name") val displayName: String,
     val link: String?
 ) {
     enum class Type {

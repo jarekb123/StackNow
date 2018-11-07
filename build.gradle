@@ -47,4 +47,5 @@ ext {
     // Test libraries version
 
     jUnitVersion = "4.12"
+    mockitoKotlinVersion = "2.0.0"
 }
