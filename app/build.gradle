@@ -52,5 +52,6 @@ dependencies {
     implementation "org.greenrobot:eventbus:$eventbusVersion"
 
     testImplementation "junit:junit:$jUnitVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion"
 
 }
