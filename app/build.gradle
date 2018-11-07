@@ -19,17 +19,37 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
-    implementation "androidx.appcompat:appcompat:$androidXAppCompat"
-    implementation "androidx.constraintlayout:constraintlayout:$androidXConstraintLayout"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
 
     implementation "android.arch.navigation:navigation-fragment-ktx:$navComponentVersion"
     implementation "android.arch.navigation:navigation-ui-ktx:$navComponentVersion"
 
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+
+    implementation "org.koin:koin-android-viewmodel:$koinVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    implementation "org.greenrobot:eventbus:$eventbusVersion"
 
     testImplementation "junit:junit:$jUnitVersion"
 
