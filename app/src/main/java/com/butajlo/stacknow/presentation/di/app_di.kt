@@ -1,4 +1,4 @@
-package com.butajlo.stacknow.di
+package com.butajlo.stacknow.presentation.di
 
 import com.butajlo.stacknow.presentation.network.networkModule
 import com.butajlo.stacknow.presentation.network.serviceModule
