@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="question"
+            type="com.butajlo.stacknow.presentation.search.results.QuestionBinding" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_question_title"
+            style="@style/QuestionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{question.title}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/tv_question_user_date"
+            style="@style/QuestionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/question_subtitle_pattern(question.username, question.date)}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_question_tags"
+            style="@style/QuestionItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tags="@{question.tags}"
+            tools:listitem="@layout/item_question_tag" />
+
+    </LinearLayout>
+</layout>

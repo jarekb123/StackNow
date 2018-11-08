@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StackNow.iml" filepath="$PROJECT_DIR$/StackNow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StackNowApp.iml" filepath="$PROJECT_DIR$/StackNowApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

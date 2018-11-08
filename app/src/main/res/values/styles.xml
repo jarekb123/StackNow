@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="QuestionItem" parent="AppTheme">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="QuestionItem.Tag" parent="QuestionItem">
+        <item name="android:background">@drawable/shape_rounded</item>
+        <item name="android:textColor">@color/text_on_shape_rounded</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
 </resources>
