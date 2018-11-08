@@ -36,6 +36,7 @@ ext {
     navComponentVersion = "1.0.0-alpha07"
 
     // Other libs
+    timberVersion = "4.7.1"
     koinVersion = "1.0.1"
     rxJavaVersion = "2.2.3"
     rxAndroidVersion = "2.1.0"
