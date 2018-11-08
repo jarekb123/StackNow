@@ -26,8 +26,8 @@ class FindQuestionsTest {
     fun findQuestions_CheckSize_ShouldReturnQuestionItemsSize() {
         findQuestions(
             repository = searchStackRepository,
-            searchString = anyString(),
-            page = anyInt()
+            searchString = "",
+            page = 1
         )
             .test()
             .assertValue { it.size == questions.size }
@@ -37,8 +37,8 @@ class FindQuestionsTest {
     fun findQuestions_CheckReturnedValues() {
         findQuestions(
             repository = searchStackRepository,
-            searchString = anyString(),
-            page = anyInt()
+            searchString = "",
+            page = 1
         )
             .test()
             .assertValue { it[1].title == "no borders in apple but in android" }
