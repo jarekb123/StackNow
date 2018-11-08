@@ -34,4 +34,11 @@ class FindQuestionsTest {
             .assertValue { it[1].title == "no borders in apple but in android" }
             .assertValue { it[2].creationDate.get(Calendar.YEAR) == 2016 }
     }
+
+    @Test
+    fun findQuestions_BadSearchString_ShouldReturnEmptyList() {
+        findQuestions(repository = searchStackRepository, searchString = "bad words", page = 1)
+            .test()
+            .assertValue { it.isEmpty() }
+    }
 }
