@@ -10,6 +10,7 @@ import com.butajlo.stacknow.R
 import com.butajlo.stacknow.presentation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
+import timber.log.Timber
 
 class MainActivity : BaseActivity() {
 
@@ -23,7 +24,7 @@ class MainActivity : BaseActivity() {
 
         if(Intent.ACTION_SEARCH == intent.action) {
             intent.getStringExtra(SearchManager.QUERY)?.also {
-
+                Timber.d("Search query: $it")
             }
         }
     }
