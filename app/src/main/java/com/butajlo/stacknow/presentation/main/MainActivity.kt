@@ -1,6 +1,7 @@
 package com.butajlo.stacknow.presentation.main
 
 import android.app.SearchManager
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.widget.SearchView
@@ -19,6 +20,12 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setSupportActionBar(toolbar)
+
+        if(Intent.ACTION_SEARCH == intent.action) {
+            intent.getStringExtra(SearchManager.QUERY)?.also {
+
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
