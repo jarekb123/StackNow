@@ -3,10 +3,12 @@ package com.butajlo.stacknow.presentation.search.results
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.butajlo.stacknow.R
 import com.butajlo.stacknow.databinding.ItemQuestionBinding
 import com.butajlo.stacknow.presentation.ext.binding
+import kotlinx.android.synthetic.main.item_question.view.*
 
 class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolder>() {
 
@@ -31,6 +33,13 @@ class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolde
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+        init {
+            itemView.rv_question_tags.apply {
+                adapter = QuestionTagsAdapter()
+                layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            }
+        }
 
         private val binding: ItemQuestionBinding? by binding()
 
