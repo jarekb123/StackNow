@@ -20,6 +20,7 @@ private fun createRetrofit(okHttpClient: OkHttpClient) =
         .addConverterFactory(GsonConverterFactory.create())
         .baseUrl(API_URL)
         .client(okHttpClient)
+        .build()
 
 private fun createOkHttpClient() =
     OkHttpClient.Builder()
