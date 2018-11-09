@@ -45,6 +45,7 @@ ext {
     retrofitVersion = "2.4.0"
     okHttpVersion = "3.11.0"
     gsonVersion = "2.8.5"
+    picassoVersion = "2.71828"
     eventbusVersion = "3.1.1"
 
     // Test libraries version

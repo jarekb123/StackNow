@@ -17,7 +17,7 @@ class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolde
     override fun getItemCount() = results.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_question, null, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_question, parent, false)
 
         return ViewHolder(view)
     }
@@ -33,13 +33,6 @@ class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolde
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        init {
-            itemView.rv_question_tags.apply {
-                adapter = QuestionTagsAdapter()
-                layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            }
-        }
 
         private val binding: ItemQuestionBinding? by binding()
 
