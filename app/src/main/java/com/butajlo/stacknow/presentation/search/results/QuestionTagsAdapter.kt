@@ -34,8 +34,8 @@ class QuestionTagsAdapter : RecyclerView.Adapter<QuestionTagsAdapter.ViewHolder>
 }
 
 @BindingAdapter("tags")
-fun bindTagsToRecyclerView(recyclerView: RecyclerView, tags: List<String>) {
-    recyclerView.adapter?.apply {
+fun RecyclerView.bindTags(tags: List<String>) {
+    adapter?.apply {
         if (this is QuestionTagsAdapter) {
             setTags(tags)
         }
