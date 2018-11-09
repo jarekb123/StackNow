@@ -4,7 +4,9 @@
 
     <string name="search_questions_hint">Find Questions</string>
 
-    <string name="question_subtitle_pattern">by %s on %s</string>
+    <string name="question_date_format">created on %s</string>
+    <string name="question_username_format">asked by %s</string>
 
     <string name="argument_search_query">ARGUMENT_SEARCH_QUERY</string>
+    <string name="answers_count_label">answers</string>
 </resources>

@@ -55,9 +55,12 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
 
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
     implementation "org.greenrobot:eventbus:$eventbusVersion"
 
     testImplementation "junit:junit:$jUnitVersion"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
 }

@@ -1,9 +1,7 @@
 package com.butajlo.stacknow.presentation.search
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.butajlo.stacknow.R
 import com.butajlo.stacknow.presentation.base.BaseFragment
@@ -21,16 +19,13 @@ class SearchFragment : BaseFragment() {
     private val searchViewModel by viewModel<SearchViewModel>()
     private val searchQuery by argument<String>(ARGUMENT_SEARCH_QUERY)
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        searchQuery?.apply {
-            searchViewModel.searchQuestions(this)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (savedInstanceState == null) {
+            searchQuery?.run {
+                searchViewModel.searchQuestions(this)
+            }
         }
-
-        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

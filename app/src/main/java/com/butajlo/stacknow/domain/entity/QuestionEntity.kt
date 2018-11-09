@@ -8,6 +8,7 @@ data class QuestionEntity(
     val questionId: Int,
     val title: String,
     val questionUrl: String,
+    val answersCount: Int,
     val isAnswered: Boolean,
     val lastActivityDate: Calendar,
     val creationDate: Calendar

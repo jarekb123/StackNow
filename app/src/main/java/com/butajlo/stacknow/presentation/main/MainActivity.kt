@@ -1,7 +1,5 @@
 package com.butajlo.stacknow.presentation.main
 
-import android.app.SearchManager
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.widget.SearchView
@@ -11,38 +9,36 @@ import com.butajlo.stacknow.R
 import com.butajlo.stacknow.presentation.base.BaseActivity
 import com.butajlo.stacknow.presentation.search.SearchFragment
 import kotlinx.android.synthetic.main.activity_main.*
-import org.koin.android.ext.android.inject
-import timber.log.Timber
+import kotlinx.android.synthetic.main.search_screen.*
 
 class MainActivity : BaseActivity() {
 
     override val layoutRes = R.layout.activity_main
 
-    private val searchManager: SearchManager by inject()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setSupportActionBar(toolbar)
-
-        if (Intent.ACTION_SEARCH == intent.action) {
-            intent.getStringExtra(SearchManager.QUERY)?.also { searchQuery ->
-                Timber.d("Search query: $searchQuery")
-                findNavController(R.id.nav_host_fragment)
-                    .navigate(
-                        R.id.action_searchFragment_self,
-                        bundleOf(SearchFragment.ARGUMENT_SEARCH_QUERY to searchQuery)
-                    )
-            }
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.search_menu, menu)
 
-        (menu.findItem(R.id.menu_search).actionView as SearchView).apply {
-            maxWidth = Int.MAX_VALUE
-            setSearchableInfo(searchManager.getSearchableInfo(componentName))
-            setIconifiedByDefault(true)
+        (menu.findItem(R.id.menu_search).actionView as SearchView).also {
+            it.maxWidth = Int.MAX_VALUE
+            it.setIconifiedByDefault(true)
+            it.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    findNavController(R.id.nav_host_fragment)
+                        .navigate(
+                            R.id.action_searchFragment_self,
+                            bundleOf(SearchFragment.ARGUMENT_SEARCH_QUERY to query)
+                        )
+                    it.clearFocus()
+                    return false
+                }
+
+                override fun onQueryTextChange(newText: String?) = false
+            })
         }
         return true
     }

@@ -12,5 +12,6 @@ fun QuestionData.toEntity() =
         questionUrl = link,
         creationDate = (creationDate * 1000L).toCalendar(),
         lastActivityDate = (lastActivityDate * 1000L).toCalendar(),
-        isAnswered = isAnswered
+        isAnswered = isAnswered,
+        answersCount = answerCount
     )
