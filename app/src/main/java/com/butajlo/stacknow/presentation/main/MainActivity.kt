@@ -5,9 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.widget.SearchView
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import com.butajlo.stacknow.R
 import com.butajlo.stacknow.presentation.base.BaseActivity
+import com.butajlo.stacknow.presentation.search.SearchFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 import timber.log.Timber
@@ -22,9 +24,14 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setSupportActionBar(toolbar)
 
-        if(Intent.ACTION_SEARCH == intent.action) {
-            intent.getStringExtra(SearchManager.QUERY)?.also {
-                Timber.d("Search query: $it")
+        if (Intent.ACTION_SEARCH == intent.action) {
+            intent.getStringExtra(SearchManager.QUERY)?.also { searchQuery ->
+                Timber.d("Search query: $searchQuery")
+                findNavController(R.id.nav_host_fragment)
+                    .navigate(
+                        R.id.action_searchFragment_self,
+                        bundleOf(SearchFragment.ARGUMENT_SEARCH_QUERY to searchQuery)
+                    )
             }
         }
     }
@@ -41,7 +48,7 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onBackPressed() {
-        if(!findNavController(R.id.nav_host_fragment).navigateUp()) {
+        if (!findNavController(R.id.nav_host_fragment).navigateUp()) {
             super.onBackPressed()
         }
     }
