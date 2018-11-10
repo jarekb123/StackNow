@@ -12,6 +12,7 @@ data class QuestionBinding(
     val title: String,
     val username: String,
     val avatarUrl: String?,
+    val questionUrl: String,
     val answersCount: Int,
     val date: String,
     val tags: List<String>
@@ -21,6 +22,7 @@ fun QuestionEntity.toBinding() = QuestionBinding(
     title = title,
     username = owner.username,
     avatarUrl = owner.profileImageUrl,
+    questionUrl = questionUrl,
     answersCount = answersCount,
     date = let {
         val format = SimpleDateFormat("MMMM d, yyyy h:mm a", Locale.US)
