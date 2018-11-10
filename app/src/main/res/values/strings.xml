@@ -9,4 +9,6 @@
 
     <string name="argument_search_query">ARGUMENT_SEARCH_QUERY</string>
     <string name="answers_count_label">answers</string>
+
+    <string name="argument_details_url">ARGUMENT_DETAILS_URL</string>
 </resources>

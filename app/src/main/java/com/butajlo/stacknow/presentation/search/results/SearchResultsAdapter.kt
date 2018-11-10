@@ -10,7 +10,8 @@ import com.butajlo.stacknow.databinding.ItemQuestionBinding
 import com.butajlo.stacknow.presentation.ext.binding
 import kotlinx.android.synthetic.main.item_question.view.*
 
-class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolder>() {
+
+class SearchResultsAdapter(private val onItemClick: (QuestionBinding) -> Unit) : RecyclerView.Adapter<SearchResultsAdapter.ViewHolder>() {
 
     private val results = mutableListOf<QuestionBinding>()
 
@@ -19,7 +20,7 @@ class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolde
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_question, parent, false)
 
-        return ViewHolder(view)
+        return ViewHolder(view, onItemClick)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -32,9 +33,13 @@ class SearchResultsAdapter : RecyclerView.Adapter<SearchResultsAdapter.ViewHolde
         notifyDataSetChanged()
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, onItemClick: (QuestionBinding) -> Unit) : RecyclerView.ViewHolder(itemView) {
 
         private val binding: ItemQuestionBinding? by binding()
+
+        init {
+            itemView.setOnClickListener { binding?.question?.apply { onItemClick(this) } }
+        }
 
         fun bind(question: QuestionBinding) {
             binding?.question = question
