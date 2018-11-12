@@ -67,7 +67,7 @@ class SearchFragment : BaseFragment() {
             it.setIconifiedByDefault(true)
             it.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
-                    startLastQueryService(query)
+                    startLastQueryWorker(query)
                     findNavController()
                         .navigate(
                             R.id.action_searchFragment_self,
@@ -83,7 +83,7 @@ class SearchFragment : BaseFragment() {
         super.onCreateOptionsMenu(menu, inflater)
     }
 
-    private fun startLastQueryService(query: String?) {
+    private fun startLastQueryWorker(query: String?) {
         val data = Data.Builder()
             .putString(LastQueryWorker.EXTRA_QUERY, query)
             .build()
