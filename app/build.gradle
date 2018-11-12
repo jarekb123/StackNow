@@ -38,6 +38,8 @@ dependencies {
     implementation "android.arch.navigation:navigation-fragment-ktx:$navComponentVersion"
     implementation "android.arch.navigation:navigation-ui-ktx:$navComponentVersion"
 
+    implementation "android.arch.work:work-runtime-ktx:$workManagerVersion"
+
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
 
     implementation "org.koin:koin-android-viewmodel:$koinVersion"

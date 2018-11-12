@@ -8,6 +8,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.work.*
 import com.butajlo.stacknow.R
 import com.butajlo.stacknow.presentation.base.BaseFragment
 import com.butajlo.stacknow.presentation.details.DetailsFragment.Companion.ARGUMENT_DETAILS_URL
@@ -15,10 +16,12 @@ import com.butajlo.stacknow.presentation.ext.argument
 import com.butajlo.stacknow.presentation.ext.asObserver
 import com.butajlo.stacknow.presentation.search.results.QuestionBinding
 import com.butajlo.stacknow.presentation.search.results.SearchResultsAdapter
+import com.butajlo.stacknow.presentation.service.LastQueryWorker
 import com.butajlo.stacknow.presentation.toolbar.ToolbarProvider
 import kotlinx.android.synthetic.main.screen_search.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
+import java.util.concurrent.TimeUnit
 
 class SearchFragment : BaseFragment() {
 
@@ -64,6 +67,7 @@ class SearchFragment : BaseFragment() {
             it.setIconifiedByDefault(true)
             it.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
+                    startLastQueryService(query)
                     findNavController()
                         .navigate(
                             R.id.action_searchFragment_self,
@@ -77,6 +81,28 @@ class SearchFragment : BaseFragment() {
             })
         }
         super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    private fun startLastQueryService(query: String?) {
+        val data = Data.Builder()
+            .putString(LastQueryWorker.EXTRA_QUERY, query)
+            .build()
+        val workConstraints =
+            Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build()
+        val workRequest =
+            PeriodicWorkRequest
+                .Builder(LastQueryWorker::class.java, PeriodicWorkRequest.MIN_PERIODIC_INTERVAL_MILLIS, TimeUnit.MILLISECONDS)
+                .setConstraints(workConstraints)
+                .setInputData(data)
+                .build()
+
+        WorkManager.getInstance().enqueueUniquePeriodicWork(
+            LastQueryWorker.WORK_LAST_QUERY,
+            ExistingPeriodicWorkPolicy.REPLACE,
+            workRequest
+        )
     }
 
     private fun searchQuestions() {
