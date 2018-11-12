@@ -13,6 +13,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:titleTextColor="@color/toolbar_text"
+            app:subtitleTextColor="@color/toolbar_text"
             android:minHeight="?attr/actionBarSize" />
     </com.google.android.material.appbar.AppBarLayout>
 
