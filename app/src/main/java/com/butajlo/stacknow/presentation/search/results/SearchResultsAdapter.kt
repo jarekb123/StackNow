@@ -3,6 +3,7 @@ package com.butajlo.stacknow.presentation.search.results
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.butajlo.stacknow.R
@@ -27,10 +28,13 @@ class SearchResultsAdapter(private val onItemClick: (QuestionBinding) -> Unit) :
         holder.bind(results[position])
     }
 
-    fun setResults(searchResults: List<QuestionBinding>) {
-        results.clear()
-        results.addAll(searchResults)
-        notifyDataSetChanged()
+    fun updateResults(searchResults: List<QuestionBinding>) {
+        val diffResult = DiffUtil.calculateDiff(SearchResultsDiffCallback(results, searchResults))
+        results.apply {
+            clear()
+            addAll(searchResults)
+        }
+        diffResult.dispatchUpdatesTo(this)
     }
 
     class ViewHolder(itemView: View, onItemClick: (QuestionBinding) -> Unit) : RecyclerView.ViewHolder(itemView) {
