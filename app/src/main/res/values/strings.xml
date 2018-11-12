@@ -11,4 +11,10 @@
     <string name="answers_count_label">answers</string>
 
     <string name="argument_details_url">ARGUMENT_DETAILS_URL</string>
+
+    <string name="query_notification_channel_name">query_channel</string>
+    <string name="query_notification_channel_description">description</string>
+
+    <string name="query_notification_title">StackNow - Ongoing query</string>
+    <string name="query_notification_text">Query: %s</string>
 </resources>
