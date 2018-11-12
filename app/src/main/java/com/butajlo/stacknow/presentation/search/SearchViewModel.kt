@@ -18,8 +18,10 @@ class SearchViewModel(private val repository: SearchStackRepository) : ViewModel
 
     private val subscriptions = CompositeDisposable()
     private val searchResult = MutableLiveData<List<QuestionBinding>>()
+    private val isLoading = MutableLiveData<Boolean>()
 
     fun getSearchResult(): LiveData<List<QuestionBinding>> = searchResult
+    fun isLoading(): LiveData<Boolean> = isLoading
 
     fun searchQuestions(searchQuery: String, page: Int = 1) {
         findQuestions(
@@ -29,9 +31,16 @@ class SearchViewModel(private val repository: SearchStackRepository) : ViewModel
         )
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
+            .doOnSubscribe { isLoading.value = true }
             .subscribeBy(
-                onSuccess = { searchResult.value = it.map { it.toBinding() } },
-                onError = { Timber.e(it) }
+                onSuccess = {
+                    isLoading.value = false
+                    searchResult.value = it.map { it.toBinding() }
+                },
+                onError = {
+                    isLoading.value = false
+                    Timber.e(it)
+                }
             ).addTo(subscriptions)
     }
 
