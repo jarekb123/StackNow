@@ -1,7 +1,5 @@
 package com.butajlo.stacknow.domain.entity
 
-import java.util.concurrent.TimeUnit
-
 data class NotificationEntity(
     val id: Int,
     val title: String,
