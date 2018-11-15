@@ -1,16 +1,14 @@
 package com.butajlo.stacknow.presentation.service
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.Context
-import android.os.Build
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import com.butajlo.stacknow.R
+import com.butajlo.stacknow.domain.entity.NotificationEntity
 import com.butajlo.stacknow.domain.repository.SearchStackRepository
+import com.butajlo.stacknow.domain.services.NotificationService
 import com.butajlo.stacknow.domain.usecase.findQuestions
+import com.butajlo.stacknow.domain.usecase.showNotification
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
@@ -22,10 +20,10 @@ class LastQueryWorker(private val context: Context, private val params: WorkerPa
     Worker(context, params), KoinComponent {
 
     private val searchRepository by inject<SearchStackRepository>()
+    private val notificationService by inject<NotificationService>(name = "push")
     private val subscription = CompositeDisposable()
 
     override fun doWork(): Result {
-        createNotificationChannel()
         val query = params.inputData.getString(EXTRA_QUERY)
         query?.run { updateQuery(this) }
 
@@ -43,39 +41,22 @@ class LastQueryWorker(private val context: Context, private val params: WorkerPa
         findQuestions(repository = searchRepository, searchString = query, page = 1)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .doOnSubscribe { showNotification(query) }
+            .doOnSubscribe { showPushNotification(query) }
             .subscribe()
             .addTo(subscription)
     }
 
-    private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = context.getString(R.string.query_notification_channel_name)
-            val description = context.getString(R.string.query_notification_channel_description)
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val channel = NotificationChannel(CHANNEL_ID, name, importance)
-            channel.description = description
-
-            val notificationManager =
-                context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.createNotificationChannel(channel)
-        }
-    }
-
-    private fun showNotification(query: String) {
+    private fun showPushNotification(query: String) {
         context.apply {
-            val notificationBuilder = NotificationCompat.Builder(context, CHANNEL_ID)
-            notificationBuilder
-                .setDefaults(NotificationCompat.DEFAULT_ALL)
-                .setContentTitle(getString(R.string.query_notification_title))
-                .setContentText(getString(R.string.query_notification_text, query))
-                .setSmallIcon(R.drawable.ic_notification_small)
-                .setOngoing(true)
-                .priority = NotificationCompat.PRIORITY_DEFAULT
-
-            NotificationManagerCompat.from(this).apply {
-                notify(NOTIFICATION_ID, notificationBuilder.build())
-            }
+            val notification = NotificationEntity(
+                id = NOTIFICATION_ID,
+                title = getString(R.string.query_notification_title),
+                content = getString(R.string.query_notification_text, query),
+                channelName = CHANNEL_ID,
+                importance = NotificationEntity.Importance.DEFAULT,
+                isClosable = false
+            )
+            showNotification(service = notificationService, notification = notification)
         }
     }
 
