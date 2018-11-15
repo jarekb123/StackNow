@@ -10,4 +10,6 @@ class ToastNotificationService(private val context: Context) : NotificationServi
     override fun show(notification: NotificationEntity) {
         Toast.makeText(context, notification.content, Toast.LENGTH_LONG).show()
     }
+
+    override fun close(notificationId: Int) = Unit
 }

@@ -18,6 +18,10 @@ class PushNotificationService(private val context: Context) : NotificationServic
             )
     }
 
+    override fun close(notificationId: Int) {
+        NotificationManagerCompat.from(context).cancel(notificationId)
+    }
+
     /**
      * Creates NavigationChannel
      * @return Channel's ID

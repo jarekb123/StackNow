@@ -7,4 +7,6 @@ interface NotificationService {
     /** Shows provided [notification] **/
     fun show(notification: NotificationEntity)
 
+    fun close(notificationId: Int)
+
 }
